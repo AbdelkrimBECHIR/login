@@ -3,7 +3,7 @@ class User
 {
     public int $idUser;
     public string $email;
-    public string $firstName;
+    public string $firstname;
     public string $name;
     public string $password;
     public string $role;
@@ -24,13 +24,13 @@ class User
         return $this;
     }
 
-    public function getfirstName(): string
+    public function getFirstName(): string
     {
-        return $this->firstName;
+        return $this->firstname;
     }
-    public function setfirstName(string $firstName): self
+    public function setFirstName(string $firstname): self
     {
-        $this->firstName = $firstName;
+        $this->firstname = $firstname;
         return $this;
     }
 

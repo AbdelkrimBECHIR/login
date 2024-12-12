@@ -28,10 +28,11 @@ class LoginController
     
             if ($user) {
                 // Stocker l'utilisateur en session
-                session_start();
+               
                 $_SESSION['user_id'] = $user->getId();
                 $_SESSION['user_role'] = $user->getRole();
-    
+                $_SESSION['user_firstname']= $user->getFirstName();
+
                 // Rediriger en fonction du rôle
                 if ($user->getRole() === 'admin') {
                     $_SESSION['flash_message'] = "Connexion réussie.";

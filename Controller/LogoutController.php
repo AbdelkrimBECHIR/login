@@ -2,7 +2,7 @@
 
 class LogoutController
 {
-    public function logout()
+    public function page()
     {
        
         // Détruire toutes les données de session
